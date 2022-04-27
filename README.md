@@ -23,4 +23,5 @@ Meu desafio é construir este aplicativo gerador de conselhos usando a [API Advi
 - HTML5
 - [SASS](https://sass-lang.com/documentation)
 - CSS 
+- [API Advice Slip](https://api.adviceslip.com/)
 - Mobile-first workflow
