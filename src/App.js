@@ -1,11 +1,27 @@
+// importação do axios
+import axios from "axios";
+
+// instânciação
+const api = axios.create({
+  //Random advice
+  baseURL: 'https://api.adviceslip.com/advice'
+})
+
+
+// requisição 
+//https://axios-http.com/ptbr/docs/example
+api.get('').then((Response)=>{
+  console.log(Response)
+})
 
 
 function App() {
+  
   return (
     <div className="App">
-
       <body>
         Advice
+
         {/* #<!-- Advice ID goes here -->
 
 "<!-- Advice text goes here -->" */}
