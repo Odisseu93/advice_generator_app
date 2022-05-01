@@ -34,7 +34,7 @@ Deploy: https://advice-generator-app-gamma.vercel.app/
 - Implementação da promise Axios no projeto 
 - Implementação do pré-processador SASS
 - Implementação da API advice Slip
-- lógica criada no  e imprementada no App.js 
+- lógica criada no  e implementada no App.js 
 - Estilização de telas para dispositivos mobile (telas apartir de 375px)  ✅
 - Deploy da página no vercel ✅ [CLIQUE AQUI PARA ACESSAR A PÁGINA! ](https://advice-generator-app-gamma.vercel.app/)       
 
