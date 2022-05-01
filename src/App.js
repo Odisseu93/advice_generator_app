@@ -56,13 +56,13 @@ function App() {
         </div>
       </main>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <div class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> .
           <br />
           Coded by <a href="https://github.com/odisseu93" target={"_blank"}>Ulisses Silvério</a> .
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
