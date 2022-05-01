@@ -53,7 +53,7 @@ footer {
   text-align: center;
   font-size: 0.5em;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
 }
 footer a {
   color: hsl(150deg, 100%, 66%);
