@@ -1,12 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
-* {
+:root {
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-weight: 800;
   color: hsl(193deg, 38%, 86%);
   padding: 0;
   margin: 0;
+  background: hsl(218deg, 23%, 16%);
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  margin: auto 10px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 10px;
+  top: 200px;
+  min-height: 200px;
+  min-width: 95%;
+  background: hsl(217deg, 19%, 24%);
+}
+
+.advice-title, .advice-id {
+  font-size: 0.5em;
+  padding: 5px;
+  color: hsl(150deg, 100%, 66%);
+}
+.advice-button {
+  position: relative;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: hsl(150deg, 100%, 66%);
+  border: none;
+}
+.advice-button:hover {
+  box-shadow: 0 0 30px hsl(150deg, 100%, 66%);
+  border: none;
+}
+
+footer {
+  width: 90%;
+  text-align: center;
+  font-size: 0.5em;
+  position: absolute;
+  bottom: 0;
+}
+footer a {
+  color: hsl(150deg, 100%, 66%);
 }
 
 /*# sourceMappingURL=style.css.map */

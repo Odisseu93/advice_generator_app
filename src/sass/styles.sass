@@ -1,13 +1,61 @@
 @use 'variables'
+@use 'mixins'
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap')
 
-*
+:root
   font-family: 'Manrope', sans-serif
   font-size: variables.$Font-size-quote
   font-weight: 800
   color: variables.$light-cyan
   padding: 0
   margin: 0
+  background: variables.$dark-blue
   box-sizing: border-box
- 
+
+body
+  margin: 0
+  width: 100vw
+  height: 100vh
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+  // align-items: center
+
+.main
+  margin: auto 10px
+  text-align: center
+  padding: 10px
+  box-sizing: border-box
+  position: absolute
+  border-radius: 10px
+  top: 200px
+  min-height: 200px
+  min-width: 95%
+  background: variables.$dark-grayish-Blue
+
+.advice
+  &-title, &-id 
+    font-size: 0.5em
+    padding: 5px
+    color : variables.$Neon-Green
+
+  &-button
+    position: relative
+    bottom: -30px
+    width: 60px
+    height: 60px
+    border-radius: 30px
+    background: variables.$Neon-Green
+    border: none
+    &:hover
+      @include mixins.neon-efect($color: variables.$Neon-Green )
+
+footer
+  width: 90%
+  text-align: center
+  font-size: 0.50em
+  position: absolute
+  bottom: 0
+  & a
+    color: variables.$Neon-Green
