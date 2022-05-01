@@ -2,17 +2,9 @@
 import axios from "axios";
 
 // instânciação
-const api = axios.create({
+const Api = axios.create({
   //Random advice
   baseURL: 'https://api.adviceslip.com/advice'
 })
 
-api.get()
-  .then((response) => {
-    const { slip } = response.data;
-    const { id } = slip;
-    const { advice } = slip;
-    console.log( 'id:',id, 'advice:', advice )
-  })
-
-export default api;
+export default Api;
