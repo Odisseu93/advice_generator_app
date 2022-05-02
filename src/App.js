@@ -1,6 +1,6 @@
 import Api from "./services/api";
 import React, { useEffect, useState } from 'react';
-import { dice, pattern_divider_mobile } from "./components/images";
+import { dice, pattern_divider_desktop, pattern_divider_mobile } from "./components/images";
 
 
 // requisição 
@@ -47,6 +47,7 @@ function App() {
           </div>
           <div>
             {pattern_divider_mobile}
+            {pattern_divider_desktop}
           </div>
           <div>
             <button onClick={getAdvice} className='advice-button' id="advice_button">
