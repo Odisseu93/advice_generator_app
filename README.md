@@ -36,9 +36,10 @@ Deploy: https://advice-generator-app-gamma.vercel.app/
 - Implementação da API advice Slip
 - lógica criada no  e implementada no App.js 
 - Estilização de telas para dispositivos mobile (telas apartir de 375px)  ✅
-- Deploy da página no vercel ✅ [CLIQUE AQUI PARA ACESSAR A PÁGINA! ](https://advice-generator-app-gamma.vercel.app/)       
+- Deploy da página no vercel ✅ [CLIQUE AQUI PARA ACESSAR A PÁGINA! ](https://advice-generator-app-gamma.vercel.app/) 
+- Estilização para outras telas       
 
 ### O que falta fazer
-- Estilização para outras telas 👷
+
 - refatoração do código 👷
 - imprementar o Hooks useEffect do React.js 👷
