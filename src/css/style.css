@@ -14,6 +14,10 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
@@ -21,7 +25,6 @@ body {
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
-  position: absolute;
   border-radius: 10px;
   top: 200px;
   min-height: 200px;
@@ -73,6 +76,12 @@ body {
 
   .pattern-divider-desktop {
     display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    min-width: 500px;
+    max-width: 500px;
   }
 }
 
