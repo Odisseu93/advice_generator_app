@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import Api from "./services/api";
-import React, { useEffect, useState } from 'react';
 import { dice, pattern_divider_desktop, pattern_divider_mobile } from "./components/images";
 
 
@@ -12,29 +12,28 @@ import { dice, pattern_divider_desktop, pattern_divider_mobile } from "./compone
 
 
 
-const getAdvice = () => {
-
-  Api.get()
-    .then((response) => {
-      const { slip } = response.data;
-      const { id } = slip;
-      const { advice } = slip;
-      console.log('id: ', id, '\n', 'advice: ', advice)
-
-      const advice_id = document.querySelector('#advice_id');
-      advice_id.textContent = '# ' + id;
-      const advice_message = document.querySelector('#advice_message');
-      advice_message.textContent = '"' + advice + '"';
-
-    })
-    .catch(console.error('error'))
-}
 
 function App() {
-  
+  const [showAdvice, setShowAdvice] = useState(
+
+    Api.get()
+      .then((response) => {
+        const { slip } = response.data;
+        const { id } = slip;
+        const { advice } = slip;
+        console.log('id: ', id, '\n', 'advice: ', advice)
+
+        const advice_id = document.querySelector('#advice_id');
+        advice_id.textContent = '# ' + id;
+        const advice_message = document.querySelector('#advice_message');
+        advice_message.textContent = '"' + advice + '"';
+
+      })
+      .catch(console.error('error'))
+  )
   return (
     <div className="App">
-    {getAdvice()}
+      {/* {getAdvice()} */}
 
       <main className="main">
         <div className="advice">
@@ -50,7 +49,7 @@ function App() {
             {pattern_divider_desktop}
           </div>
           <div>
-            <button onClick={getAdvice} className='advice-button' id="advice_button">
+            <button onClick={() => setShowAdvice({ showAdvice })} className='advice-button' id="advice_button">
               {dice}
             </button>
           </div>
