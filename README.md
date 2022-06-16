@@ -12,7 +12,7 @@ Este é  um desafio proposto no [Frontend Mentor](https://www.frontendmentor.io)
 
 Meu desafio é construir este aplicativo gerador de conselhos usando a [API Advice Slip](https://api.adviceslip.com/) e fazê-lo parecer o mais próximo possível do [design](./src/design)
 
-Deploy: https://advice-generator-app-gamma.vercel.app/
+[Deployment](https://advice-generator-ods1qqbwk-odisseu93.vercel.app/)
 
 - Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo
 
@@ -36,10 +36,11 @@ Deploy: https://advice-generator-app-gamma.vercel.app/
 - Implementação da API advice Slip
 - lógica criada no  e implementada no App.js 
 - Estilização de telas para dispositivos mobile (telas apartir de 375px)  ✅
-- Deploy da página no vercel ✅ [CLIQUE AQUI PARA ACESSAR A PÁGINA! ](https://advice-generator-app-gamma.vercel.app/) 
-- Estilização para outras telas       
+- Deploy da página no vercel ✅ [CLIQUE AQUI PARA ACESSAR A PÁGINA! ](https://advice-generator-ods1qqbwk-odisseu93.vercel.app/) 
+- Estilização para outras telas   
+- imprementação do Hook useState no projeto     
 
 ### O que falta fazer
 
 - refatoração do código 👷
-- imprementar o Hooks useEffect do React.js 👷
+
